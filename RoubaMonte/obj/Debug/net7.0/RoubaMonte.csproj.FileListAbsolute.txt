@@ -1,0 +1,15 @@
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.exe
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.deps.json
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.runtimeconfig.json
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.dll
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.pdb
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.AssemblyReference.cache
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.GeneratedMSBuildEditorConfig.editorconfig
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfoInputs.cache
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfo.cs
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CoreCompileInputs.cache
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.dll
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
+D:\tiaw\roubamonte\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
