@@ -1,42 +1,47 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 class Baralho
 {
-    Stack<string> Pilha = new Stack<string>();
+    Stack<Carta> Pilha = new Stack<Carta>();
+    Random random = new Random();
 
     public void Ordenar(string Pilha)
     {
     }
-    public Stack<string> GerarBaralho(int quantidade)
+    public Stack<Carta> GerarBaralho(int quantidade)
     {
-        String arquivoBaralhoPadrao = System.IO.Directory.GetCurrentDirectory() + "/model/baralho.txt";
-        String arquivoBaralhoJogoAtual = System.IO.Directory.GetCurrentDirectory() + "/model/baralhoPartida.txt";
-        String[] baralho = File.ReadLines(arquivoBaralhoPadrao).ToArray();
+        string arquivoBaralhoPadrao = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralho.txt";
+        string arquivoBaralhoJogoAtual = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralhoPartida.txt";
+        string[] baralho = File.ReadAllLines(arquivoBaralhoPadrao);
 
         int quantidadeBaralho = 0;
         using (StreamWriter writer = new StreamWriter(arquivoBaralhoJogoAtual, append: true))
         {
             while (quantidadeBaralho != quantidade)
             {
-                for (int j = 0; j < baralho.Count(); j++)
+                for (int j = 0; j < baralho.Length; j++)
                 {
                     writer.WriteLine(baralho[j]);
                 }
                 quantidadeBaralho++;
             }
         }
-        String[] baralhoJogoAtual = File.ReadLines(arquivoBaralhoJogoAtual).ToArray();
+        string[] baralhoJogoAtual = File.ReadAllLines(arquivoBaralhoJogoAtual);
 
-        int count = baralhoJogoAtual.Count();
+        int count = baralhoJogoAtual.Length;
         while (count > 1)
         {
-            int i = Random.Shared.Next(count--);
+            int i = random.Next(count--);
             (baralhoJogoAtual[i], baralhoJogoAtual[count]) = (baralhoJogoAtual[count], baralhoJogoAtual[i]);
         }
 
-        for (int i = 0; i < baralhoJogoAtual.Count(); i++)
+        for (int i = 0; i < baralhoJogoAtual.Length; i++)
         {
-            Pilha.Push(baralhoJogoAtual[i]);
+            string[] splited = baralhoJogoAtual[i].Split(" ");
+            // Console.WriteLine(splited[0]);
+            // Console.WriteLine(splited[1]);
+            Pilha.Push(new Carta(int.Parse(splited[0]), int.Parse(splited[1])));
         }
 
         return Pilha;
