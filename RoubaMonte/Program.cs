@@ -6,8 +6,9 @@ namespace RoubaMonte
     {
         static void Main(string[] args)
         {
-            new MenuView().MostrarMenu();
-            new 
+            // new MenuView().MostrarMenu();
+             Jogador jogador = new Jogador();
+             
         }
     }
 }

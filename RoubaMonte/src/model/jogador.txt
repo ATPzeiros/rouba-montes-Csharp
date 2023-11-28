@@ -1,0 +1,4 @@
+ id,name,lastGamePosition,
+ 0, Gabriel, 2,
+ 1, Gustavo, 5,
+ 4
