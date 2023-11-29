@@ -28,3 +28,18 @@ E:\exercicios\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
 E:\exercicios\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
 E:\exercicios\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
 E:\exercicios\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.exe
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.deps.json
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.runtimeconfig.json
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.dll
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.pdb
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.AssemblyReference.cache
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfoInputs.cache
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfo.cs
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CoreCompileInputs.cache
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.dll
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
+C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
