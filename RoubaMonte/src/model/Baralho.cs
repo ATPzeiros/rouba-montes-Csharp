@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 class Baralho
 {
-    Stack<Carta> Pilha = new Stack<Carta>();
+    public Stack<Carta> Pilha = new Stack<Carta>();
     Random random = new Random();
 
     public void Ordenar(string Pilha)

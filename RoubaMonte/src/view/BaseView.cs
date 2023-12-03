@@ -1,15 +1,15 @@
-using System;
-using System;
+class BaseView
+{
 
-class MenuView {
-
-    private static MenuController menuController = new MenuController();
     private ConsoleKeyInfo opcao;
 
-    public void MostrarMenu(){
+    public void MostrarMenu(BaseController controller){
         do{
             Console.Clear();
-            foreach(Menu menu in menuController.GetMenu() ){
+            
+            Console.WriteLine(BaseController.Logo());
+
+            foreach(Menu menu in controller.GetMenu() ){
                 if(menu.IsSelected){
                     Console.WriteLine("-> " + menu.Title);
                 } else {
@@ -18,7 +18,7 @@ class MenuView {
             }
 
             opcao = Console.ReadKey();
-            menuController.UpdateMenu(opcao);
-        }while(!menuController.ShouldFinish());
+            controller.UpdateMenu(opcao);
+        }while(!controller.ShouldFinish());
     }
 }

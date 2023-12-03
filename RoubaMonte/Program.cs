@@ -6,8 +6,8 @@ namespace RoubaMonte
     {
         static void Main(string[] args)
         {
-            Jogador jogador = new Jogador();
-            jogador.MostrarJogadoresExistentes();
+            // Jogador jogador = new Jogador();
+            // jogador.MostrarJogadoresExistentes();
             /*  new MenuView().MostrarMenu();
             Baralho B = new Baralho();
             var pilha = B.GerarBaralho(2);
@@ -16,6 +16,8 @@ namespace RoubaMonte
             {
                 Console.WriteLine(p.Numero+" "+p.Nipe);
             } */
+
+            new InicioView();
         }
     }
 }

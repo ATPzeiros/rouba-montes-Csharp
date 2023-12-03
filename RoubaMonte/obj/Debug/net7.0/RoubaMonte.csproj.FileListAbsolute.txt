@@ -43,3 +43,18 @@ C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\roub
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\RoubaMontes\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
+D:\c#\aed\original\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.exe
+D:\c#\aed\original\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.deps.json
+D:\c#\aed\original\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.runtimeconfig.json
+D:\c#\aed\original\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.dll
+D:\c#\aed\original\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.pdb
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.AssemblyReference.cache
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfoInputs.cache
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfo.cs
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CoreCompileInputs.cache
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.dll
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
+D:\c#\aed\original\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
