@@ -11,7 +11,7 @@ class Jogador {
 
 
     public string [] GetPlayersToMatriz(){
-        string [] jogadores = File.ReadAllLines(System.IO.Directory.GetCurrentDirectory() + "/src/model/jogador.txt");
+        string [] jogadores = File.ReadAllLines(System.IO.Directory.GetCurrentDirectory() + "../src/txt/jogador.txt");
         return jogadores;
     }
     
@@ -41,8 +41,8 @@ class Jogador {
     
     /* public string [] PickPlayer(){
 
-    } */
+    }
     public void SavePlayersInTxt(string [] players){
 
-    }
+    }*/
 }

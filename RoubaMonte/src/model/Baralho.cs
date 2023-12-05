@@ -6,7 +6,7 @@ class Baralho
     Stack<Carta> Pilha = new Stack<Carta>();
     Random random = new Random();
 
-    public void Ordenar(string Pilha)
+    public void Ordenar(Stack<Carta> MaoJogador)
     {
     }
     public Stack<Carta> GerarBaralho(int quantidade)
@@ -39,8 +39,6 @@ class Baralho
         for (int i = 0; i < baralhoJogoAtual.Length; i++)
         {
             string[] splited = baralhoJogoAtual[i].Split(" ");
-            // Console.WriteLine(splited[0]);
-            // Console.WriteLine(splited[1]);
             Pilha.Push(new Carta(int.Parse(splited[0]), int.Parse(splited[1])));
         }
 
