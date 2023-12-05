@@ -8,24 +8,8 @@ class Mesa
     private List<Carta> discarteMesa = new List<Carta>();
     private Stack<Carta> monte = new Stack<Carta>();
 
-    public void inicializandoMesa(){
-        int x = 2;
-        int pe = 0;
+    public void inicializandoMesa(int x){
         monte = Baralho.GerarBaralho(x);
         discarteMesa = Discarte.InicializandoDiscarte(monte);
-         Console.Write("[");
-        foreach (var l in discarteMesa)
-        {
-            Console.Write(l.Numero+" "+l.Nipe);
-        }
-        Console.Write("]");
-        Console.Write("[");
-        foreach (var p in monte)
-        {
-            pe++;
-            Console.Write(p.Numero+" "+p.Nipe);
-        }
-        Console.Write("]");
-        Console.WriteLine(pe);
     }
 }
