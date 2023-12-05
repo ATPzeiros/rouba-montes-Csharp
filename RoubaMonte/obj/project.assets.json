@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Gustavo\\.nuget\\packages\\": {}
+    "C:\\Users\\Serafim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\aed\\original\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+      "projectUniqueName": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
       "projectName": "RoubaMonte",
-      "projectPath": "D:\\c#\\aed\\original\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
-      "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\aed\\original\\rouba-montes\\RoubaMonte\\obj\\",
+      "projectPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+      "packagesPath": "C:\\Users\\Serafim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Serafim\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
