@@ -1,13 +1,19 @@
+using System.Collections.Generic;
+using System;
+
 class MesaController: BaseController
 {
 
-    private List<Jogador> jogadores = new();
+    private List<Jogador> jogadores = Jogador.MostrarJogadoresExistentes();
+
     public List<Jogador> jogadoresSelecionados = new();
+
     public Baralho baralho = new();
 
     public MesaController(Action<Menu> OnMenuSelected){
         OnMeunSelected = OnMenuSelected;
         menuStack.Push(BuildMesaOptions());
+        
     }
 
     private static List<Menu> BuildMesaOptions() => new(){
@@ -22,7 +28,19 @@ class MesaController: BaseController
 
     public List<Jogador> TodosJogadores() => jogadores;
 
+    public List<Jogador> JogadoresSelecionados() => jogadoresSelecionados;
+
     public void GerarBaralho(int quantidade){
         baralho.GerarBaralho(quantidade);
+    }
+
+    public bool SelecionarJogador(string id){
+        Jogador jogador = jogadores.Find(j => j.id == id);
+        if(jogador == null){
+            return false;
+        }
+
+        jogadoresSelecionados.Add(jogador);
+        return true;
     }
 }

@@ -39,10 +39,12 @@ class Baralho
         for (int i = 0; i < baralhoJogoAtual.Length; i++)
         {
             string[] splited = baralhoJogoAtual[i].Split(" ");
-            // Console.WriteLine(splited[0]);
-            // Console.WriteLine(splited[1]);
+            Console.WriteLine(splited[0]);
+            Console.WriteLine(splited[1]);
             Pilha.Push(new Carta(int.Parse(splited[0]), int.Parse(splited[1])));
         }
+
+        
 
         return Pilha;
     }
