@@ -57,3 +57,18 @@ C:\Faculdade\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
 C:\Faculdade\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
 C:\Faculdade\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
 C:\Faculdade\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.exe
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.deps.json
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.runtimeconfig.json
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.pdb
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.AssemblyReference.cache
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.GeneratedMSBuildEditorConfig.editorconfig
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfoInputs.cache
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfo.cs
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CoreCompileInputs.cache
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll

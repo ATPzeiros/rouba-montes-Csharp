@@ -8,7 +8,7 @@ namespace RoubaMonte
         {
             //new MenuView().MostrarMenu();
             Mesa mesa = new Mesa();
-            mesa.inicializandoMesa();
+            mesa.inicializandoMesa(2);
         }
     }
 }

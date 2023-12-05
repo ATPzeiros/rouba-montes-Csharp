@@ -8,6 +8,12 @@ class Baralho
 
     public void Ordenar(Stack<Carta> MaoJogador)
     {
+        List<Carta> listaOrdenada = new List<Carta>();
+        for (int i = 0; i < MaoJogador.Count; i++)
+        {
+            listaOrdenada.Add(MaoJogador.Pop());
+        }
+        listaOrdenada.Sort();
     }
     public Stack<Carta> GerarBaralho(int quantidade)
     {
