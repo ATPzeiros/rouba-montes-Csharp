@@ -36,19 +36,19 @@ class MesaController: BaseController
 
     public bool SelecionarJogador(string id){
         Jogador jogador = jogadores.Find(j => j.id == id);
-        Console.WriteLine("Jogador {0} encontrado", jogador.name);
-        bool verificar = VerificarJogadoresJaSelecionados(id);
         if(jogador == null){
             Console.WriteLine("Jogador não encontrado");
             Console.WriteLine("");
             return false;
         }
-        if(verificar){
-             jogadoresSelecionados.Add(jogador);
-            return true;
+        bool verificar = VerificarJogadoresJaSelecionados(id);
+        if(verificar == false){
+            return false;
         }
         else{
-            return false;
+            Console.WriteLine("Jogador {0} encontrado", jogador.name);
+            jogadoresSelecionados.Add(jogador);
+            return true;
         }
 
     }
@@ -61,6 +61,9 @@ class MesaController: BaseController
         }
         
         return true;
+    }
+    public void lerJogadores(){
+        jogadores = Jogador.MostrarJogadoresExistentes();
     }
 }
     

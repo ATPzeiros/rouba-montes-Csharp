@@ -54,6 +54,7 @@ class MesaView : BaseView
                 Console.WriteLine("Informe o nome do jogador");
                 string name = Console.ReadLine();
                 Jogador.addPlayer(id, name);
+                mesaController.lerJogadores();
             }
                 
             else if(verificar == "1"){

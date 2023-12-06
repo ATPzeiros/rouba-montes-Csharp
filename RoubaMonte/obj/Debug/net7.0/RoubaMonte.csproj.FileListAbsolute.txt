@@ -73,3 +73,17 @@ C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rou
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.exe
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.deps.json
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.runtimeconfig.json
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.dll
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\bin\Debug\net7.0\RoubaMonte.pdb
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.GeneratedMSBuildEditorConfig.editorconfig
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfoInputs.cache
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.AssemblyInfo.cs
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CoreCompileInputs.cache
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.dll
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\refint\RoubaMonte.dll
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.pdb
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
+C:\BACKUP GERAL\FERNANDA\Desktop\GAB CONTABILIDADE\Segundo semestre\Rouba-Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll

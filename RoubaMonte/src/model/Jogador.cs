@@ -5,7 +5,7 @@ using System.Collections.Generic;
 class Jogador {
     public string id {get;set;}
     public string name {get;set;}
-    public Stack<Carta> carta {get;set;}
+    public Stack<Carta> monte {get;set;}
     // private string lastGamePosition;
     // private string lastGameHand;
     // private Queue<string> Ranking;
