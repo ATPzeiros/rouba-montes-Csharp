@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\minhas coisas\\faculdade\\1. materias\\segundo periodo\\aed\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
       "projectName": "RoubaMonte",
       "projectPath": "D:\\minhas coisas\\faculdade\\1. materias\\segundo periodo\\aed\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
       "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
       "outputPath": "D:\\minhas coisas\\faculdade\\1. materias\\segundo periodo\\aed\\rouba-montes\\RoubaMonte\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+      "projectName": "RoubaMonte",
+      "projectPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+      "packagesPath": "C:\\Users\\Serafim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\obj\\",
+>>>>>>> origin/game-menu-console
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config"

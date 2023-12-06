@@ -1,9 +1,13 @@
 enum NivelMenu {
     INICIAL, 
     MESA, 
+    MESA_ADD_PLAYER, 
+    MESA_INIT_GAME, 
     ESTATISTICA, 
     SOBRE,
     ACAO, 
+    ESTATISTICA_GERAL,
+    ESTATISTICA_NOME,
     VOLTAR, 
     SAIR
 }

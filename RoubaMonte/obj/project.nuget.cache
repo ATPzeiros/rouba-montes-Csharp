@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "gv9C7DSFdPWI/GTAYKTIMqePN+4Gn+NwvtOW+U4LWdx9BSuqH8XFH48Uf+jUuzpBNXrVxyuaBOd7ufaMOCqr5A==",
   "success": true,
   "projectFilePath": "D:\\minhas coisas\\faculdade\\1. materias\\segundo periodo\\aed\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+=======
+  "dgSpecHash": "Z58KLU7PzEEZvSNBa+aQ8r6luGnYnxDtXOvMPN3WCy4GJrcdlkOoLNeXVa7ew2jZJ3KxEdCZSMLxxvUK4qcr6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+>>>>>>> origin/game-menu-console
   "expectedPackageFiles": [],
   "logs": []
 }

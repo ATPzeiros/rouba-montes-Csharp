@@ -4,15 +4,15 @@ class Menu {
     public bool IsSelected { get; set; }
     public NivelMenu NextMenu { get; set; }
 
-    public Menu(string title, NivelMenu nivel){
+    public Menu(string title, NivelMenu next){
         Title = title;
         IsSelected = false;
-        NextMenu = nivel;
+        NextMenu = next;
     }
 
-    public Menu(string title, bool isSelected, NivelMenu nivel){
+    public Menu(string title, bool isSelected, NivelMenu next){
         Title = title;
         IsSelected = isSelected;
-        NextMenu = nivel;
+        NextMenu = next;
     }
 }

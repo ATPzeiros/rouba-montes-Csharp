@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 
 class Jogador {
-    private string id;
+    public string id {get;set;}
     private string name;
     private string lastGamePosition;
     private string lastGameHand;
