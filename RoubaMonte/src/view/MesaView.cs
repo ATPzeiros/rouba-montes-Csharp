@@ -15,7 +15,7 @@ class MesaView : BaseView
         if (menu.NextMenu == NivelMenu.MESA_ADD_PLAYER)
         {
             MostrarTodosJogadores();
-            AdicionarJogadores();
+            AdicionarJogadoresAoJogo();
             MostrarJogadoresSelecionados();
             GerarBaralho();
         }
@@ -27,23 +27,41 @@ class MesaView : BaseView
 
     static void MostrarTodosJogadores()
     {
-        Console.WriteLine("Todos os jogadores");
+        Console.WriteLine("Todos os jogadores Cadastrados");
+        Console.WriteLine("Digite -1 para sair");
+        Console.WriteLine("");
         foreach (Jogador jogador in mesaController.TodosJogadores())
         {
             Console.WriteLine(jogador.id + " " + jogador.name);
         }
     }
 
-    static void AdicionarJogadores(){
+    static void AdicionarJogadoresAoJogo(){
         Console.WriteLine("Selecione os jogadores");
+        Console.WriteLine("");
         string id;
+        string verificar;
         do {
-            Console.WriteLine("Informe o id do jogador");
-            id = Console.ReadLine();
-            if(id == "-1")
+            Console.WriteLine("1- ADICIONAR JOGADOR JÁ EXISTENTE");
+            Console.WriteLine("2- ADICIONAR NOVO JOGADOR");
+            Console.WriteLine("-1 Para Sair");
+             verificar = Console.ReadLine();
+            if(verificar == "-1")
                 break;
-            mesaController.SelecionarJogador(id);
-        }while(id != "-1");
+            else if(verificar == "2"){
+                 Console.WriteLine("Informe o id do jogador");
+                id = Console.ReadLine();
+                Console.WriteLine("Informe o nome do jogador");
+                string name = Console.ReadLine();
+                Jogador.addPlayer(id, name);
+            }
+                
+            else if(verificar == "1"){
+                Console.WriteLine("Informe o id do jogador");
+                id = Console.ReadLine();
+                mesaController.SelecionarJogador(id);
+            }
+        }while(verificar != "-1");
     }
 
     static void MostrarJogadoresSelecionados(){

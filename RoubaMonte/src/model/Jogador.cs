@@ -35,12 +35,20 @@ class Jogador {
     }
 
 
-    //Function To Select a Player that alredy played 
     
-    /* public string [] PickPlayer(){
-
-    } */
-    public void SavePlayersInTxt(string [] players){
-
-    }
+    public static void addPlayer(string id, string name){
+        string filePath = Directory.GetCurrentDirectory() + "/src/model/jogador.txt";
+        try{
+            using (StreamWriter writer = new StreamWriter(filePath, append: true))
+            {
+                string data = $"{id},{name}";
+                writer.WriteLine(data);
+               
+            }
+        }
+        catch (Exception e){
+            Console.WriteLine(e);
+           
+        }
+    }   
 }

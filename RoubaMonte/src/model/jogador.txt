@@ -1,2 +1,5 @@
 0,Gabriel
 1,Gustavo
+10,Mariana
+30,aninha
+15,leandro
