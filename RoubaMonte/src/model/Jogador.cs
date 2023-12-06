@@ -11,8 +11,8 @@ class Jogador {
     // private Queue<string> Ranking;
 
 
-    public string [] GetPlayersToMatriz(){
-        string [] jogadores = File.ReadAllLines(System.IO.Directory.GetCurrentDirectory() + "../src/txt/jogador.txt");
+    public static string [] GetPlayersToMatriz(){
+        string [] jogadores = File.ReadAllLines(System.IO.Directory.GetCurrentDirectory() + "/src/txt/jogador.txt");
         return jogadores;
     }
 
