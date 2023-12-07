@@ -1,20 +1,41 @@
 using System;
 using System.Collections.Generic;
 
-class GameController
+class GameController: BaseController
 {
 
     List<Jogador> jogadores;
     Baralho baralho;
+    Discarte discarte = new();
     int index = 0;
+    public GameController(Action<Menu> OnMenuSelectec){
+        this.OnMeunSelected = OnMenuSelectec;
+        menuStack.Push(BuildGameOptions());
+    }
 
     public void AtualizarJogo(List<Jogador> jogadores, Baralho baralho)
     {
         this.jogadores = jogadores;
         this.baralho = baralho;
+        discarte.InicializarDiscarte(baralho.Pilha);
 
         Console.WriteLine(baralho.Pilha.Count);
     }
+
+    public override bool ShouldFinish()
+    {
+        return nivelMenu == NivelMenu.VOLTAR;
+    }
+    public override List<Menu> GetMenu()
+    {
+        return menuStack.Peek();
+    }
+    private static List<Menu> BuildGameOptions() => new(){
+        new("Roubar o monte", true, NivelMenu.GAME_ROUBAR),
+        new("Pegar do dicarte", NivelMenu.GAME_DISCARTE),
+        new("Passar a vez", NivelMenu.GAME_PASSAR_VEZ),
+        new("Voltar", NivelMenu.VOLTAR),
+    };
 
     public bool FinalizarJogo(){
         if(baralho.Pilha.Count != 0)
@@ -42,8 +63,12 @@ class GameController
             return a;
         }
     }
-    public Carta CartaDaVez(Baralho baralho){
-        Carta CartaDaVez = baralho.Pilha.Pop();
+    public Carta CartaDaVez(){
+        Carta CartaDaVez = baralho.Pilha.Peek();
         return CartaDaVez;
     }
+    public void PegarDescarte(){
+        discarte.PegarDescarte(JogadorDaVez(), baralho.Pilha.Pop());
+    }
+
 }

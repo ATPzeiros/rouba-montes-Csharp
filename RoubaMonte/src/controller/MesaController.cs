@@ -13,7 +13,6 @@ class MesaController: BaseController
     public MesaController(Action<Menu> OnMenuSelected){
         OnMeunSelected = OnMenuSelected;
         menuStack.Push(BuildMesaOptions());
-        
     }
 
     private static List<Menu> BuildMesaOptions() => new(){

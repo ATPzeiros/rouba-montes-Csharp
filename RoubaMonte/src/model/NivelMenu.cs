@@ -8,6 +8,9 @@ enum NivelMenu {
     ACAO, 
     ESTATISTICA_GERAL,
     ESTATISTICA_NOME,
+    GAME_ROUBAR,
+    GAME_DISCARTE,
+    GAME_PASSAR_VEZ,
     VOLTAR, 
     SAIR
 }
