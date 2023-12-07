@@ -2,20 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 class Discarte{
-    List<Carta> l = new List<Carta>();
+    public List<Carta> lista = new List<Carta>() ;
     
     //INICIALIZA O DESCARTE, COLOCANDO 6 CARTAS NA MESA/LISTA
     public List<Carta> InicializarDiscarte(Stack<Carta> x){
         for(int i = 0; i < 6; i++){
-            l.Add(x.Pop());
+            lista.Add(x.Pop());
         }
-        return l;
+        return lista;
     }
     public void PegarDescarte(Jogador jogador, Carta cartaMonte){
-        for(int i = 0; i < l.Count; i++){
-            if(l[i].Numero == cartaMonte.Numero){
-                jogador.monte.Push(l[i]);
-                l.RemoveAt(i);
+        for(int i = 0; i < lista.Count; i++){
+            if(lista[i].Numero == cartaMonte.Numero){
+                jogador.monte.Push(lista[i]);
+                lista.RemoveAt(i);
             }
         }
     }

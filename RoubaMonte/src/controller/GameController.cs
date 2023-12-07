@@ -4,9 +4,9 @@ using System.Collections.Generic;
 class GameController: BaseController
 {
 
-    List<Jogador> jogadores;
+    public List<Jogador> jogadores{get;set;}
     Baralho baralho;
-    Discarte discarte = new();
+    public Discarte discarte = new();
     int index = 0;
     public GameController(Action<Menu> OnMenuSelectec){
         this.OnMeunSelected = OnMenuSelectec;
@@ -18,8 +18,14 @@ class GameController: BaseController
         this.jogadores = jogadores;
         this.baralho = baralho;
         discarte.InicializarDiscarte(baralho.Pilha);
-
+        foreach(Jogador jogador in jogadores){
+            jogador.monte.Push(baralho.Pilha.Pop());
+        }
+        foreach(Jogador jogador in jogadores){
+            Console.WriteLine(jogador.name + " " + jogador.monte.Peek().Numero);
+        }
         Console.WriteLine(baralho.Pilha.Count);
+        Console.ReadKey();
     }
 
     public override bool ShouldFinish()
@@ -48,19 +54,31 @@ class GameController: BaseController
     }
 
     public void PassarVez(){
+        discarte.lista.Add(baralho.Pilha.Pop());
         index++;
     }
-    public Jogador JogadorRoubado(string id, string name){
-        Jogador a = new Jogador(id, name);
+    public Jogador JogadorRoubado(){
+        Console.WriteLine("Digite o ID de quem você quer Roubar o Monte: ");
+        string seFufu = Console.ReadLine();
+        foreach(Jogador jogador in jogadores){
+            if(seFufu == jogador.id){
+            Console.WriteLine(jogador.name);
+            return jogador;
+            }   
+        }
+        Jogador a = new(seFufu, seFufu);
         return a;
     }
-    public Stack<Carta> roubarMonte( Jogador jogador , Carta CartaDaVez){
+    public void roubarMonte( Jogador jogador , Carta CartaDaVez){
         if(CartaDaVez.Numero == jogador.monte.Peek().Numero){
-            return jogador.monte;
+            Console.WriteLine("jogador Atual: "+JogadorDaVez().name+ "\t jogador Roubado: "+jogador.name);
+            Console.WriteLine("Carta Da Vez:"+CartaDaVez.Numero + "\t Topo do Jogador: " +jogador.monte.Peek().Numero );
+            while(jogador.monte.Count != 0){
+                jogadores[index%jogadores.Count].monte.Push(jogador.monte.Pop());
+            }
         }
         else{
-            Stack<Carta> a = new();
-            return a;
+            Console.WriteLine("As Cartas Não são Iguais para roubar o monte!!!!!");
         }
     }
     public Carta CartaDaVez(){

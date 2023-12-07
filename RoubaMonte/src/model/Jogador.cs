@@ -19,6 +19,7 @@ class Jogador {
     public Jogador(string id, string name){
         this.id = id;
         this.name = name;
+        this.monte = new Stack<Carta> ();
     }
     
     //Funtion to Show Players that already played once
