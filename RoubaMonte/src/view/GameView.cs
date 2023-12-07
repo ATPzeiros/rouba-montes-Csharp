@@ -10,6 +10,7 @@ class GameView: BaseView
         gameController.AtualizarJogo(jogadores, baralho);
         MostrarMenu(gameController, ShowStatus);
         Console.ReadKey();
+        gameController.FinalizarJogo();
         // gameController.AtualizarJogo(jogadores, baralho);
 
         // do{

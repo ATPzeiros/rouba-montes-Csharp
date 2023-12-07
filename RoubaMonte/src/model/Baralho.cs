@@ -20,6 +20,7 @@ class Baralho
         string arquivoBaralhoPadrao = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralho.txt";
         string arquivoBaralhoJogoAtual = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralhoPartida.txt";
         string[] baralho = File.ReadAllLines(arquivoBaralhoPadrao);
+        File.WriteAllText(arquivoBaralhoJogoAtual, string.Empty);
 
         int quantidadeBaralho = 0;
         using (StreamWriter writer = new StreamWriter(arquivoBaralhoJogoAtual, append: true))
@@ -49,9 +50,6 @@ class Baralho
             Console.WriteLine(splited[1]);
             Pilha.Push(new Carta(int.Parse(splited[0]), int.Parse(splited[1])));
         }
-
-        
-
         return Pilha;
     }
 }

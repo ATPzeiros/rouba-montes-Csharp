@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 class GameController: BaseController
@@ -7,6 +8,7 @@ class GameController: BaseController
     public List<Jogador> jogadores{get;set;}
     Baralho baralho;
     public Discarte discarte = new();
+    string arquivoBaralhoJogoAtual = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralhoPartida.txt";
     int index = 0;
     public GameController(Action<Menu> OnMenuSelectec){
         this.OnMeunSelected = OnMenuSelectec;
@@ -44,8 +46,10 @@ class GameController: BaseController
     };
 
     public bool FinalizarJogo(){
-        if(baralho.Pilha.Count != 0)
+        if(baralho.Pilha.Count != 0){
             baralho.Pilha.Pop();
+        }
+        File.WriteAllText(arquivoBaralhoJogoAtual, string.Empty);
         return baralho.Pilha.Count == 0;
     }
 
