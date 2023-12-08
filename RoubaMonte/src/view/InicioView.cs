@@ -11,7 +11,6 @@ class InicioView: BaseView {
 
     static void OnMenuSelected(Menu menu){
         if(menu.NextMenu == NivelMenu.MESA){
-            Log.Iniciar();
             new MesaView();
         } else if(menu.NextMenu == NivelMenu.ESTATISTICA){
             new EstatisticaView();

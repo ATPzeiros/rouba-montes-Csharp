@@ -10,6 +10,9 @@ class GameController: BaseController
     public Discarte discarte = new();
     string arquivoBaralhoJogoAtual = System.IO.Directory.GetCurrentDirectory() + "/src/txt/baralhoPartida.txt";
     int index = 0;
+
+    Log log = new();
+
     public GameController(Action<Menu> OnMenuSelectec){
         this.OnMeunSelected = OnMenuSelectec;
         menuStack.Push(BuildGameOptions());
@@ -21,7 +24,9 @@ class GameController: BaseController
         this.baralho = baralho;
         discarte.InicializarDiscarte(baralho.Pilha);
         foreach(Jogador jogador in jogadores){
-            jogador.monte.Push(baralho.Pilha.Pop());
+            Carta carta = baralho.Pilha.Pop();
+            jogador.monte.Push(carta);
+            log.SalvarInicializacao(jogador, carta);
         }
         foreach(Jogador jogador in jogadores){
             Console.WriteLine(jogador.name + " " + jogador.monte.Peek().Numero);
@@ -60,6 +65,7 @@ class GameController: BaseController
     public void PassarVez(){
         discarte.lista.Add(baralho.Pilha.Pop());
         index++;
+        log.SalvarArcao(JogadorDaVez(), "PASSOU A VEZ");
     }
     public Jogador JogadorRoubado(){
         Console.WriteLine("Digite o ID de quem você quer Roubar o Monte: ");
@@ -80,6 +86,8 @@ class GameController: BaseController
             while(jogador.monte.Count != 0){
                 jogadores[index%jogadores.Count].monte.Push(jogador.monte.Pop());
             }
+
+            log.SalvarRoubo(JogadorDaVez(), jogador);
         }
         else{
             Console.WriteLine("As Cartas Não são Iguais para roubar o monte!!!!!");
@@ -90,7 +98,10 @@ class GameController: BaseController
         return CartaDaVez;
     }
     public void PegarDescarte(){
-        discarte.PegarDescarte(JogadorDaVez(), baralho.Pilha.Pop());
+        Carta carta = baralho.Pilha.Pop();
+        discarte.PegarDescarte(JogadorDaVez(), carta);
+        log.SalvarArcao(JogadorDaVez(), "PEGOU DO DESCARTE - " + carta.Numero);
+        index++;
     }
 
 }
