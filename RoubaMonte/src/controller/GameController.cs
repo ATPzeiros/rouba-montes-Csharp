@@ -32,7 +32,7 @@ class GameController: BaseController
 
     public override bool ShouldFinish()
     {
-        return nivelMenu == NivelMenu.VOLTAR;
+        return baralho.Pilha.Count == 0;
     }
     public override List<Menu> GetMenu()
     {
@@ -74,7 +74,7 @@ class GameController: BaseController
         return a;
     }
     public void roubarMonte( Jogador jogador , Carta CartaDaVez){
-        if(CartaDaVez.Numero == jogador.monte.Peek().Numero){
+        if(CartaDaVez.Numero == jogador.monte.Peek().Numero && JogadorDaVez().id != jogador.id){
             Console.WriteLine("jogador Atual: "+JogadorDaVez().name+ "\t jogador Roubado: "+jogador.name);
             Console.WriteLine("Carta Da Vez:"+CartaDaVez.Numero + "\t Topo do Jogador: " +jogador.monte.Peek().Numero );
             while(jogador.monte.Count != 0){

@@ -9,7 +9,7 @@ class GameView: BaseView
     public GameView(List<Jogador> jogadores, Baralho baralho){
         gameController.AtualizarJogo(jogadores, baralho);
         MostrarMenu(gameController, ShowStatus);
-        Console.ReadKey();
+    
         gameController.FinalizarJogo();
         // gameController.AtualizarJogo(jogadores, baralho);
 
