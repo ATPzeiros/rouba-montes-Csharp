@@ -38,7 +38,7 @@ class Jogador {
 
     
     public static void addPlayer(string id, string name){
-        string filePath = Directory.GetCurrentDirectory() + "/src/model/jogador.txt";
+        string filePath = Directory.GetCurrentDirectory() + "/src/txt/jogador.txt";
         try{
             using (StreamWriter writer = new StreamWriter(filePath, append: true))
             {

@@ -68,7 +68,7 @@ class GameController: BaseController
         log.SalvarArcao(JogadorDaVez(), "PASSOU A VEZ");
     }
     public Jogador JogadorRoubado(){
-        Console.WriteLine("Digite o ID de quem você quer Roubar o Monte: ");
+        Console.WriteLine("Digite o id de quem quer roubar: ");
         string seFufu = Console.ReadLine();
         foreach(Jogador jogador in jogadores){
             if(seFufu == jogador.id){
@@ -81,8 +81,8 @@ class GameController: BaseController
     }
     public void roubarMonte( Jogador jogador , Carta CartaDaVez){
         if(CartaDaVez.Numero == jogador.monte.Peek().Numero && JogadorDaVez().id != jogador.id){
-            Console.WriteLine("jogador Atual: "+JogadorDaVez().name+ "\t jogador Roubado: "+jogador.name);
-            Console.WriteLine("Carta Da Vez:"+CartaDaVez.Numero + "\t Topo do Jogador: " +jogador.monte.Peek().Numero );
+            Console.WriteLine("Jogador da vez: "+JogadorDaVez().name+ "\t Jogador roubado: "+jogador.name);
+            Console.WriteLine("Carta da vez: "+CartaDaVez.Numero + "\t Carta topo do monte: " +jogador.monte.Peek().Numero );
             while(jogador.monte.Count != 0){
                 jogadores[index%jogadores.Count].monte.Push(jogador.monte.Pop());
             }
@@ -90,7 +90,7 @@ class GameController: BaseController
             log.SalvarRoubo(JogadorDaVez(), jogador);
         }
         else{
-            Console.WriteLine("As Cartas Não são Iguais para roubar o monte!!!!!");
+            Console.WriteLine("Cartas não iguais para efetuar o roubo!");
         }
     }
     public Carta CartaDaVez(){
@@ -100,7 +100,7 @@ class GameController: BaseController
     public void PegarDescarte(){
         Carta carta = baralho.Pilha.Pop();
         discarte.PegarDescarte(JogadorDaVez(), carta);
-        log.SalvarArcao(JogadorDaVez(), "PEGOU DO DESCARTE - " + carta.Numero);
+        log.SalvarArcao(JogadorDaVez(), "Carta pega do descarte - " + carta.Numero);
         index++;
     }
 

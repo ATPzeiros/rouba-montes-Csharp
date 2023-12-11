@@ -27,38 +27,38 @@ class MesaView : BaseView
 
     static void MostrarTodosJogadores()
     {
-        Console.WriteLine("Todos os jogadores Cadastrados");
-        Console.WriteLine("Digite -1 para sair");
         Console.WriteLine("");
+        Console.WriteLine("---Jogadores já cadastrados---");
+        // Console.WriteLine("Digite -1 para sair");
         foreach (Jogador jogador in mesaController.TodosJogadores())
         {
-            Console.WriteLine(jogador.id + " " + jogador.name);
+            Console.WriteLine("   [id: "+jogador.id + " - Nome: " + jogador.name+"]");
         }
     }
 
     static void AdicionarJogadoresAoJogo(){
-        Console.WriteLine("Selecione os jogadores");
-        Console.WriteLine("");
+        Console.WriteLine(" ");
+        Console.WriteLine("---Selecione os jogadores---");
         string id;
         string verificar;
         do {
-            Console.WriteLine("1- ADICIONAR JOGADOR JÁ EXISTENTE");
-            Console.WriteLine("2- ADICIONAR NOVO JOGADOR");
-            Console.WriteLine("-1 Para Sair");
+            Console.WriteLine("1 - Selecionar jogador existente");
+            Console.WriteLine("2 - Novo jogador");
+            Console.WriteLine("0 - Sair");
              verificar = Console.ReadLine();
-            if(verificar == "-1")
+            if(verificar == "0")
                 break;
             else if(verificar == "2"){
-                 Console.WriteLine("Informe o id do jogador");
+                 Console.Write("Id jogador: ");
                 id = Console.ReadLine();
-                Console.WriteLine("Informe o nome do jogador");
+                Console.Write("Nome do jogador: ");
                 string name = Console.ReadLine();
                 Jogador.addPlayer(id, name);
                 mesaController.lerJogadores();
             }
                 
             else if(verificar == "1"){
-                Console.WriteLine("Informe o id do jogador");
+                Console.Write("Id do jogador: ");
                 id = Console.ReadLine();
                 mesaController.SelecionarJogador(id);
             }
@@ -69,13 +69,13 @@ class MesaView : BaseView
         Console.WriteLine("Jogadores selecionados");
         foreach (Jogador jogador in mesaController.JogadoresSelecionados())
         {
-            Console.WriteLine(jogador.id + " " + jogador.name);
+            Console.WriteLine("\t"+jogador.id + " " + jogador.name);
         }
         Console.ReadKey();
     }
 
     static void GerarBaralho(){
-        Console.WriteLine("Informe a quantidade de baralhos:");
+        Console.WriteLine("Com quantos baralhos quer jogar: ");
         int qnt = int.Parse(Console.ReadLine());
         mesaController.GerarBaralho(qnt);
     }
