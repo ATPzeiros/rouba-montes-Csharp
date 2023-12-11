@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1,Leandro
 2,Gustavo
 3,Serafim
@@ -8,3 +9,8 @@
 8,Joao
 9,Matheus
 10,Clerosvaldo
+=======
+0,Gabriel
+1,Gustavo
+10,Mariana
+>>>>>>> e0a0fd0e6960bef62dd0c63a236ce46f4086e65f

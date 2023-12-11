@@ -55,6 +55,7 @@ class GameController: BaseController
             baralho.Pilha.Pop();
         }
         File.WriteAllText(arquivoBaralhoJogoAtual, string.Empty);
+        RankingDaPartida();
         return baralho.Pilha.Count == 0;
     }
 
@@ -102,6 +103,19 @@ class GameController: BaseController
         discarte.PegarDescarte(JogadorDaVez(), carta);
         log.SalvarArcao(JogadorDaVez(), "Carta pega do descarte - " + carta.Numero);
         index++;
+    }
+
+     public void RankingDaPartida( ){
+        string name= "";
+        int qtdMontes =0;
+        foreach(Jogador a in jogadores){
+             Console.WriteLine("Jogador {0} tem {1} Cartas no seu monte",a.name,a.monte.Count());
+             if(qtdMontes<a.monte.Count()){
+                name = a.name;
+                qtdMontes = a.monte.Count();
+             }
+        }
+        Console.WriteLine("O Vencedor da partida é o Jogador: {0}; com {1} Cartas no Monte", name, qtdMontes);
     }
 
 }
