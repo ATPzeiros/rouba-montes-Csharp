@@ -5,6 +5,7 @@ class Log {
 
     // string path = string.Format("{0:yyyy-MM-dd_hh-mm-ss-tt}.txt",DateTime.Now);
     private string path = System.IO.Directory.GetCurrentDirectory() + "/src/txt/mesa/"+ string.Format("{0:yyyy-MM-dd_hh-mm-ss-tt}.txt",DateTime.Now);
+    private string rankingPath = System.IO.Directory.GetCurrentDirectory() + "/src/txt/ranking/ranking.txt";
 
     public Log(){
        File.Create(path).Close();
@@ -28,6 +29,16 @@ class Log {
         using(StreamWriter writetext = new StreamWriter(path, true)){
             writetext.WriteLine(jogador.name + " INICIALIZOU COM " + carta.Numero);
             writetext.Close();
+        }
+    }
+
+    public void SalvarRanking(List<Jogador> jogadores){
+        File.Create(rankingPath);
+        using(StreamWriter writetext = new StreamWriter(rankingPath, true)){
+            foreach (Jogador jogador in jogadores)
+            {
+                writetext.WriteLine(jogador.name + ",");
+            }
         }
     }
 }
