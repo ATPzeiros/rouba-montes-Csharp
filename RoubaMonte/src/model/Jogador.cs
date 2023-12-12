@@ -6,9 +6,9 @@ class Jogador {
     public string id {get;set;}
     public string name {get;set;}
     public Stack<Carta> monte {get;set;}
-    // private string lastGamePosition;
-    // private string lastGameHand;
-    // private Queue<string> Ranking;
+     public  string lastGamePosition;
+     public  string lastGameHand;
+     public  Queue<string> Ranking;
 
 
     public static string [] GetPlayersToMatriz(){
@@ -38,7 +38,7 @@ class Jogador {
 
     
     public static void addPlayer(string id, string name){
-        string filePath = Directory.GetCurrentDirectory() + "/src/model/jogador.txt";
+        string filePath = Directory.GetCurrentDirectory() + "/src/txt/jogador.txt";
         try{
             using (StreamWriter writer = new StreamWriter(filePath, append: true))
             {

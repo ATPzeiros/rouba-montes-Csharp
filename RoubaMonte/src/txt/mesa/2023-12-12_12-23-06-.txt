@@ -1,6 +1,0 @@
-Gabriel INICIALIZOU COM 4
-Gustavo INICIALIZOU COM 7
-Gabriel ROUBOU MONTE DE Gustavo
-Gustavo ROUBOU MONTE DE Gabriel
-Gabriel,PASSOU A VEZ
-Gustavo,PASSOU A VEZ
