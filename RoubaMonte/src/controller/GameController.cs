@@ -65,9 +65,10 @@ class GameController: BaseController
 
     public void PassarVez(){
         discarte.lista.Add(baralho.Pilha.Pop());
-        index++;
         log.SalvarArcao(JogadorDaVez(), "PASSOU A VEZ");
+        index++;
     }
+
     public Jogador JogadorRoubado(){
         Console.WriteLine("Digite o ID de quem você quer Roubar o Monte: ");
         string seFufu = Console.ReadLine();
@@ -81,6 +82,10 @@ class GameController: BaseController
         return a;
     }
     public void roubarMonte( Jogador jogador , Carta CartaDaVez){
+        if(jogador.monte.Count == 0){
+            Console.WriteLine("Monte vazio!");
+            return;
+        }
         if(CartaDaVez.Numero == jogador.monte.Peek().Numero && JogadorDaVez().id != jogador.id){
             Console.WriteLine("jogador Atual: "+JogadorDaVez().name+ "\t jogador Roubado: "+jogador.name);
             Console.WriteLine("Carta Da Vez:"+CartaDaVez.Numero + "\t Topo do Jogador: " +jogador.monte.Peek().Numero );
@@ -89,6 +94,7 @@ class GameController: BaseController
             }
 
             log.SalvarRoubo(JogadorDaVez(), jogador);
+            index++;
         }
         else{
             Console.WriteLine("As Cartas Não são Iguais para roubar o monte!!!!!");
@@ -105,7 +111,7 @@ class GameController: BaseController
         index++;
     }
 
-     public void RankingDaPartida( ){
+     public void RankingDaPartida(){
         string name= "";
         int qtdMontes =0;
         foreach(Jogador a in jogadores){

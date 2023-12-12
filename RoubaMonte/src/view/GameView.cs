@@ -11,22 +11,19 @@ class GameView: BaseView
         MostrarMenu(gameController, ShowStatus);
     
         gameController.FinalizarJogo();
-        // gameController.AtualizarJogo(jogadores, baralho);
+        
+        foreach (Jogador jogador in gameController.jogadores)
+        {
+            Console.WriteLine("Jogador: " + jogador.name);
+            Console.WriteLine("Cartas Ordenadas: ");
+            foreach (int numeroCarta in jogador.OrdenarMao())
+            {
+                Console.Write(numeroCarta + ",");
+            }
+            Console.WriteLine();
+        }
 
-        // do{
-        //     Console.WriteLine("É a vez do jogador: " + gameController.JogadorDaVez().name);
-        //     Console.WriteLine("Qual ação você Tomará? ");
-        //     Console.WriteLine("2 - Passar vez");
-        //     Console.WriteLine("");
-        //     Console.WriteLine("");
-        //     Console.ReadKey();
-        //     gameController.roubarMonte(gameController.JogadorRoubado(gameController.JogadorDaVez().id, gameController.JogadorDaVez().name),gameController.CartaDaVez(baralho));
-        //     gameController.PassarVez();
-
-        // }while(!gameController.FinalizarJogo());
-
-        // Console.WriteLine("Need implementation");
-        // Console.ReadKey();
+        Console.ReadKey();
     }
     public static void ShowStatus(int x){
         Console.WriteLine("Carta Da Vez:" +gameController.CartaDaVez().Numero);
