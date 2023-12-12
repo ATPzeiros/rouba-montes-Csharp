@@ -7,6 +7,19 @@ class GameView: BaseView
         gameController.AtualizarJogo(jogadores, baralho);
         MostrarMenu(gameController, ShowStatus);
         gameController.FinalizarJogo();
+        
+        foreach (Jogador jogador in gameController.jogadores)
+        {
+            Console.WriteLine("Jogador: " + jogador.name);
+            Console.WriteLine("Cartas Ordenadas: ");
+            foreach (int numeroCarta in jogador.OrdenarMao())
+            {
+                Console.Write(numeroCarta + ",");
+            }
+            Console.WriteLine();
+        }
+
+        Console.ReadKey();
     }
     public static void ShowStatus(int x){
         Console.WriteLine("Carta da vez: " +gameController.CartaDaVez().Numero);

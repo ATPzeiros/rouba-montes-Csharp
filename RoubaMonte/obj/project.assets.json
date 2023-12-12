@@ -8,16 +8,11 @@
     "net7.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\leand\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Serafim\\.nuget\\packages\\": {}
->>>>>>> e0a0fd0e6960bef62dd0c63a236ce46f4086e65f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Faculdade\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
       "projectName": "RoubaMonte",
       "projectPath": "C:\\Faculdade\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
@@ -26,16 +21,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
-      "projectName": "RoubaMonte",
-      "projectPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
-      "packagesPath": "C:\\Users\\Serafim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Serafim\\Desktop\\FACULDADE - PUC MINAS\\Segundo Semestre\\Rouba Montes\\rouba-montes\\RoubaMonte\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Serafim\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> e0a0fd0e6960bef62dd0c63a236ce46f4086e65f
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -74,12 +59,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> e0a0fd0e6960bef62dd0c63a236ce46f4086e65f
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Faculdade\\rouba-montes\\RoubaMonte\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
