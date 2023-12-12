@@ -116,6 +116,7 @@ class GameController: BaseController
              }
         }
         Console.WriteLine("O Vencedor da partida é o Jogador: {0}; com {1} Cartas no Monte", name, qtdMontes);
+        Console.ReadKey();
     }
 
 }

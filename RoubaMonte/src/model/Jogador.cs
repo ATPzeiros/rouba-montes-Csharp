@@ -6,9 +6,9 @@ class Jogador {
     public string id {get;set;}
     public string name {get;set;}
     public Stack<Carta> monte {get;set;}
-    // private string lastGamePosition;
-    // private string lastGameHand;
-    // private Queue<string> Ranking;
+     public  string lastGamePosition;
+     public  string lastGameHand;
+     public  Queue<string> Ranking;
 
 
     public static string [] GetPlayersToMatriz(){
