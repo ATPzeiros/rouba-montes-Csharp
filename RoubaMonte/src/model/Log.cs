@@ -43,7 +43,7 @@ class Log {
         using(StreamWriter writetext = new StreamWriter(rankingPath, append: true)){
             int pos = 0;
             int points = 3;
-            foreach (Jogador jogador in jogadores.OrderBy(x => x.monte.Count))
+            foreach (Jogador jogador in jogadores.OrderBy(x => x.monte.Count).Reverse())
             {
 
                 writetext.Write(jogador.id);

@@ -1,20 +1,20 @@
-Leandro INICIALIZOU COM 1
-Gustavo INICIALIZOU COM 3
-Gustavo,PASSOU A VEZ
+Gustavo INICIALIZOU COM 6
+Leandro INICIALIZOU COM 13
+Gustavo,Carta pega do descarte - 1
+Leandro,Carta pega do descarte - 5
 Gustavo,Carta pega do descarte - 7
-Leandro,Carta pega do descarte - 3
-Gustavo,Carta pega do descarte - 6
-Leandro,Carta pega do descarte - 6
-Gustavo,Carta pega do descarte - 5
-Leandro,Carta pega do descarte - 10
-Gustavo,Carta pega do descarte - 6
-Leandro,Carta pega do descarte - 9
-Gustavo,Carta pega do descarte - 2
-Leandro,Carta pega do descarte - 6
-Gustavo,Carta pega do descarte - 5
-Leandro,Carta pega do descarte - 7
-Gustavo,Carta pega do descarte - 2
-Leandro,Carta pega do descarte - 2
+Leandro,PASSOU A VEZ
+Gustavo,PASSOU A VEZ
+Leandro,PASSOU A VEZ
+Gustavo,PASSOU A VEZ
+Leandro,PASSOU A VEZ
+Gustavo,PASSOU A VEZ
+Leandro,PASSOU A VEZ
+Gustavo,PASSOU A VEZ
+Leandro,Carta pega do descarte - 1
+Gustavo,PASSOU A VEZ
+Leandro,PASSOU A VEZ
+Gustavo,PASSOU A VEZ
 Leandro,PASSOU A VEZ
 Gustavo,PASSOU A VEZ
 Leandro,PASSOU A VEZ

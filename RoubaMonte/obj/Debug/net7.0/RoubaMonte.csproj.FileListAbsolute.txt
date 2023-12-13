@@ -105,3 +105,6 @@ C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rou
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.genruntimeconfig.cache
 C:\Users\Serafim\Desktop\FACULDADE - PUC MINAS\Segundo Semestre\Rouba Montes\rouba-montes\RoubaMonte\obj\Debug\net7.0\ref\RoubaMonte.dll
 >>>>>>> origin/game-menu-console
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\minhas coisas\faculdade\1. materias\segundo periodo\aed\rouba-montes\RoubaMonte\obj\Debug\net7.0\RoubaMonte.csproj.CopyComplete

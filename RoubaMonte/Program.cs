@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.ComponentModel.DataAnnotations;
+using System.Media;
 namespace RoubaMonte
 {
     internal class Program
@@ -16,8 +17,11 @@ namespace RoubaMonte
             {
                 Console.WriteLine(p.Numero+" "+p.Nipe);
             } */
-
+            SoundPlayer player = new SoundPlayer(Directory.GetCurrentDirectory()+"/sounds/inicio-windows.wav");
+            player.Play(); 
             new InicioView();
+            player = new SoundPlayer(Directory.GetCurrentDirectory()+"/sounds/preview_4.wav");
+            player.PlaySync(); 
         }
     }
 }

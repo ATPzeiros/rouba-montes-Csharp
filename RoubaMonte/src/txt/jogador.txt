@@ -1,5 +1,5 @@
-1,Leandro
-2,Gustavo
+1,Gustavo
+2,Leandro
 3,Serafim
 4,Filipe
 5,Edivaldo
@@ -7,4 +7,3 @@
 7,Arthur
 8,Joao
 9,Matheus
-10,Clerosvaldo

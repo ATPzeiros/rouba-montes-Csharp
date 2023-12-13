@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kX1xJQnyZem+j5aCTJu0SzSrsaLRV/wZNXyxQPz3hkExe51NEx8ZxXPQ3mLkUe1/4pTK8+ApN+LpfQuWxoZROg==",
+  "dgSpecHash": "kxX4jg1wdjaqIs4BY9kt4o7nnHiM0nFnPP/6JSiwLudxdG0p30oXBLhqskbUkaWJmnjpoDo1ZrXE7E4D1eKEpQ==",
   "success": true,
-  "projectFilePath": "C:\\Faculdade\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Faculdade\\rouba-montes\\RoubaMonte\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "D:\\minhas coisas\\faculdade\\1. materias\\segundo periodo\\aed\\rouba-montes\\RoubaMonte\\RoubaMonte.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leand\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }

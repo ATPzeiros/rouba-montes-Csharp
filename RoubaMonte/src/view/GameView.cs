@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using System.Media;
 class GameView: BaseView
 {
     static GameController gameController = new(OnMenuSelectec);
@@ -7,6 +8,8 @@ class GameView: BaseView
         gameController.AtualizarJogo(jogadores, baralho);
         MostrarMenu(gameController, ShowStatus);
         gameController.FinalizarJogo();
+        SoundPlayer player = new SoundPlayer(Directory.GetCurrentDirectory()+"/sounds/ta-dah-notification.wav");
+        player.Play(); 
         
         foreach (Jogador jogador in gameController.jogadores)
         {
@@ -48,6 +51,8 @@ class GameView: BaseView
         if(menu.NextMenu == NivelMenu.GAME_ROUBAR){
             Console.WriteLine("Roubar monte");
             gameController.roubarMonte(gameController.JogadorRoubado(), gameController.CartaDaVez());
+            SoundPlayer player = new SoundPlayer(Directory.GetCurrentDirectory()+"/sounds/among.wav");
+            player.Play();
             Console.ReadKey();
         }
         else if(menu.NextMenu == NivelMenu.GAME_DISCARTE){
