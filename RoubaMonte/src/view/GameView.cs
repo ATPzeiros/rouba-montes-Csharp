@@ -22,22 +22,26 @@ class GameView: BaseView
         Console.ReadKey();
     }
     public static void ShowStatus(int x){
-        Console.WriteLine("Carta da vez: " +gameController.CartaDaVez().Numero);
-        Console.WriteLine("Jogador da vez: "+gameController.JogadorDaVez().name);
-        Console.WriteLine("");
+        Console.WriteLine(" ");
+        Console.WriteLine("----------------=----------------");
+        Console.WriteLine("Carta da vez: ["+gameController.CartaDaVez().Numero+"]");
+        Console.WriteLine("Jogador da vez: ["+gameController.JogadorDaVez().name+"]");
+        Console.WriteLine("----------------=----------------");
         foreach(Jogador  jogador in gameController.jogadores){
-            Console.WriteLine("id: "+jogador.id+ " \t Nome do jogador: "+jogador.name );
+            Console.WriteLine(" ");
+            Console.WriteLine("|id: "+jogador.id+" - Nome do jogador: "+jogador.name );
             if(jogador.monte.Count != 0){
-                Console.WriteLine("Carta topo do jogador: " +jogador.monte.Peek().Numero);
+                Console.WriteLine("|Carta topo do jogador: ( " +jogador.monte.Peek().Numero+" )\n");
             } else {
                 Console.WriteLine("Monte vazio!");
             }
-        }   
-        Console.WriteLine("Quantidade de carta do descarte: ");
-        foreach(Carta carta in gameController.discarte.lista){
-            Console.Write(carta.Numero+ ",");
-            
         }
+        Console.Write("Quantidade de carta do descarte: ");
+        Console.Write("[ ");
+        foreach(Carta carta in gameController.discarte.lista){
+            Console.Write(carta.Numero+ " ");  
+        }
+        Console.WriteLine("]");
         Console.WriteLine("");
     }
     static void OnMenuSelectec(Menu menu){

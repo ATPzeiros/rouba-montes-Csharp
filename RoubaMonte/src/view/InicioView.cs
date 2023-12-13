@@ -6,6 +6,9 @@ class InicioView: BaseView {
     private static InicioController inicioController = new InicioController(OnMenuSelected);
 
     public InicioView(){
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.Black;
+        
         MostrarMenu(inicioController);
     }
 

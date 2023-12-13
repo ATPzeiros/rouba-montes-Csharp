@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 
 class GameController: BaseController
 {
@@ -70,11 +71,10 @@ class GameController: BaseController
     }
 
     public Jogador JogadorRoubado(){
-        Console.WriteLine("Digite o id de quem quer roubar: ");
+        Console.Write("Digite o id de quem quer roubar: ");
         string seFufu = Console.ReadLine();
         foreach(Jogador jogador in jogadores){
             if(seFufu == jogador.id){
-            Console.WriteLine(jogador.name);
             return jogador;
             }   
         }
@@ -97,7 +97,7 @@ class GameController: BaseController
             index++;
         }
         else{
-            Console.WriteLine("Cartas não iguais para efetuar o roubo!");
+            Console.WriteLine("Sua carta e a de "+jogador.name+" nao sao iguais para voce rouba-las!");
         }
     }
     public Carta CartaDaVez(){
@@ -110,10 +110,9 @@ class GameController: BaseController
         log.SalvarArcao(JogadorDaVez(), "Carta pega do descarte - " + carta.Numero);
         index++;
     }
-
      public void RankingDaPartida(){
         string name= "";
-        int qtdMontes =0;
+        int qtdMontes = 0;
         foreach(Jogador a in jogadores){
              Console.WriteLine("Jogador {0} tem {1} Cartas no seu monte",a.name,a.monte.Count());
              if(qtdMontes<a.monte.Count()){
