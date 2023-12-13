@@ -22,8 +22,11 @@ class GameController: BaseController
     {
         this.jogadores = jogadores;
         this.baralho = baralho;
+
+        discarte.lista.Clear();
         discarte.InicializarDiscarte(baralho.Pilha);
         foreach(Jogador jogador in jogadores){
+            jogador.monte.Clear();
             Carta carta = baralho.Pilha.Pop();
             jogador.monte.Push(carta);
             log.SalvarInicializacao(jogador, carta);
@@ -114,14 +117,31 @@ class GameController: BaseController
      public void RankingDaPartida(){
         string name= "";
         int qtdMontes =0;
+
+        Console.WriteLine();
         foreach(Jogador a in jogadores){
              Console.WriteLine("Jogador {0} tem {1} Cartas no seu monte",a.name,a.monte.Count());
              if(qtdMontes<a.monte.Count()){
                 name = a.name;
                 qtdMontes = a.monte.Count();
              }
+             log.SalvarMao(a.id, a.monte);
         }
-        Console.WriteLine("O Vencedor da partida é o Jogador: {0}; com {1} Cartas no Monte", name, qtdMontes);
+
+        List<Jogador> winners = jogadores.FindAll(x => x.monte.Count == jogadores.MaxBy(j => j.monte.Count)?.monte.Count);
+
+        if(winners.Count > 1){
+            Console.WriteLine("\n----Vencedores-----");
+        } else if(winners.Count == 1){
+            Console.WriteLine("----Vencedor-----");
+        }
+
+        foreach (Jogador jogador in winners){
+            Console.WriteLine("{0} com {1} Cartas no Monte", jogador.name, jogador.monte.Count);
+        }
+
+        log.SalvarRanking(jogadores);
+
         Console.ReadKey();
     }
 

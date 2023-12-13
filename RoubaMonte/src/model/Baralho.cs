@@ -43,7 +43,7 @@ class Baralho
             (baralhoJogoAtual[i], baralhoJogoAtual[count]) = (baralhoJogoAtual[count], baralhoJogoAtual[i]);
         }
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < /*baralhoJogoAtual.Length*/10; i++)
         {
             string[] splited = baralhoJogoAtual[i].Split(" ");
             Pilha.Push(new Carta(int.Parse(splited[0]), int.Parse(splited[1])));
