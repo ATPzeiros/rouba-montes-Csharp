@@ -21,6 +21,9 @@ class MesaView : BaseView
         }
         else if (menu.NextMenu == NivelMenu.MESA_INIT_GAME)
         {
+            if(mesaController.baralho.Pilha.Count == 0){
+                GerarBaralho();
+            }
             new GameView(mesaController.jogadoresSelecionados, mesaController.baralho);
         }
     }
